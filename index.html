@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(227, 231, 235);
+    }
+
+    .attribution {
+      margin-bottom: 3rem;
+    }
+    
+    /* .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px;
+      height: 100vh;
+    } */
+
+    .container {
+      padding: 30px;
+      color: #fff;
+      border-radius: 10px;
+    }
+
+    img {
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      object-fit: cover;
+      margin-right: 5px;
+    }
+
+    .headline {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .innerheadline {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      font-size: 13px;
+      margin-bottom: 1px;
+    }
+
+    .title {
+      font-size: 10px;
+    }
+
+    .hook {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: 14px;
+    }
+
+    .story {
+      font-size: 12px;
+    }
+
+    .daniel {
+      background-color: #7239b3;
+      grid-column: span 2;
+    }
+
+    .jonathan {
+      background-color: #5a5b5e;
+    }
+
+    .jeanette {
+      background-color: #fff;
+      color: #5a5b5e;
+      grid-column: span 1;
+    }
+
+    .patrick{
+      background-color: #323335;
+      grid-column: span 2;
+    }
+
+    .kira {
+      background-color: #fff;
+      color: #5a5b5e;
+      grid-row: span 2;
+    }
+
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 2em;
+      justify-content: center;
+    }
+
+    .deHead {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      height: 100vh;
+      margin-left: 70px;
+      margin-right: 70px;
+      margin: 30px;
+    }
+
+    /* Media Query */
+
+    @media screen and (max-width: 768px) {
+      .content {
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(auto-fit, 1fr);
+      }
+
+      .daniel {
+      grid-column: span 1;
+    }
+
+    .jeanette {
+      grid-column: span 1;
+    }
+
+    .patrick{
+      grid-column: span 1;
+    }
+
+    .kira {
+      grid-row: span 1;
+    }
+
+
+    }
+
+
+    @media screen and (max-width: 600px) {
+      .content {
+        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-rows: repeat(auto-fit, 1fr);
+      }
+
+      .attribution {
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="deHead">
+    <div class="content">
+      <div class="daniel container">
+        <div class="headline">
+          <img src="/images/image-daniel.jpg" alt="">
+          <div class="innerHeadline">
+            <p class="name">Daniel Clifford</p>
+            <p class="title">Verified Graduate</p>
+          </div>
+        </div>
+        <p class="hook">I received a job offer mid-course, and the subjects I learned were current, if not more so,
+          in the company I joined. I honestly feel I got every penny’s worth.
+        </p>
+        <p class="story">
+          “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+          transition and have heard some people who had an amazing experience here. I signed up
+          for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+          The next 12 weeks was the best - and most grueling - time of my life. Since completing
+          the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+        </p>
+      </div>
+      <!-- Jonathan -->
+      <div class="jonathan container">
+        <div class="headline">
+          <img src="/images/image-jonathan.jpg" alt="">
+          <div class="innerHeadline">
+            <p class="name">Jonathan Walters</p>
+        <p class="title">Verified Graduate</p>
+          </div>
+        </div>
+        <p class="hook">The team was very supportive and kept me motivated</p>
+        <p class="story">
+          “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+           for a big company. This was one of the best investments I’ve made in myself. ”
+        </p>
+      </div>
+       <!-- Kira -->
+    
+       <div class="kira container">
+        <div class="headline">
+          <img src="/images/image-kira.jpg" alt="">
+          <div class="innerHeadline">
+            <p class="name">  Kira Whittle</p>
+            <p class="title">Verified Graduate</p>
+          </div>
+        </div>
+    
+        <p class="hook">Such a life-changing experience. Highly recommended!</p>
+        <p class="story">
+          “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+            professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+            student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+            did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+            project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+            could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
+            experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+            100% recommend! ”
+        </p>
+      </div>
+      <!-- Jeanette -->
+    
+      <div class="jeanette container">
+        <div class="headline">
+          <img src="/images/image-jeanette.jpg" alt="">
+          <div class="innerHeadline">
+            <p class="name">Jeanette Harmon</p>
+            <p class="title">Verified Graduate</p>
+          </div>
+        </div>
+    
+        <p class="hook">An overall wonderful and rewarding experience</p>
+        <p class="story">
+          “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+          while doing something I love. ”
+        </p>
+      </div>
+      <!-- Patrick -->
+      <div class="patrick container">
+        <div class="headline">
+          <img src="/images/image-patrick.jpg" alt="">
+          <div class="innerHeadline">
+            <p class="name"> Patrick Abrams</p>
+            <p class="title">Verified Graduate</p>
+          </div>
+        </div>
+    
+        <p class="hook">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
+          learning from their experiences was easy.
+        </p>
+        <p class="story">
+          “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+            gave me the confidence necessary to be able to go out in the world and present myself as a capable
+            junior developer. The standard is above the rest. You will get the personal attention you need from
+            an incredible community of smart and amazing people. ”
+        </p>
+      </div>
+    
+      
+    </div>
+
+    
+
+  </div>
+
+  
+  
+ 
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Gekco</a>.
+    </div>
+
+
+
+  
+  
+  
+</body>
+</html>
